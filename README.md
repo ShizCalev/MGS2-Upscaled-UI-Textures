@@ -1,4 +1,4 @@
-# MGS2-Upscaled-UI-Textures
+# MGS2 AI Upscaled UI Textures
 [![Releases](https://img.shields.io/github/v/release/ShizCalev/MGS2-Upscaled-UI-Textures)](https://github.com/ShizCalev/MGS2-Upscaled-UI-Textures/releases) [![Downloads](https://img.shields.io/github/downloads/ShizCalev/MGS2-Upscaled-UI-Textures/total)](https://github.com/ShizCalev/MGS2-Upscaled-UI-Textures/releases) ![Commits](https://img.shields.io/github/commit-activity/t/ShizCalev/MGS2-Upscaled-UI-Textures) ![License](https://img.shields.io/github/license/ShizCalev/MGS2-Upscaled-UI-Textures)
 
 [Nexus Page](https://www.nexusmods.com/metalgearsolid2mc/mods/52) || **GitHub Repo (You're already here!)**
@@ -20,9 +20,8 @@ This texture pack for the 2023 PC Master Collection version of Metal Gear Solid 
 ------------
 
 
-Please report any issues found with the pack, or any issues that are not already corrected, to our GitHub here:
-https://github.com/ShizCalev/MGS2-Community-Bugfix-Compilation/issues
-
+Please report any issues found with the pack, such as textures I might've missed, to our GitHub here:
+[https://github.com/ShizCalev/MGS2-Upscaled-UI-Textures](https://github.com/ShizCalev/MGS2-Upscaled-UI-Textures)
 
 <br>
 
@@ -35,20 +34,6 @@ https://github.com/ShizCalev/MGS2-Community-Bugfix-Compilation/issues
 
 
 <br>
-
-------------
-
-## Recommended Mod Load Order (from first to last):
-
-1. [MGSHDFix](https://github.com/Lyall/MGSHDFix) (REQUIRED)
-2. [Knight_Killer](https://www.nexusmods.com/profile/KnightKiIIer)'s [MGS2 Better Audio Mod](https://www.nexusmods.com/metalgearsolid2mc/mods/3)
-3. MGS2 Community Bugfix Compilation - Base
-4. MGS2 Community Bugfix Compilation - AI Upscaled Texture Pack (if desired)
-5. MGS2 Upscaled UI Textures
-7. [IroquoisPliskin1972](https://www.nexusmods.com/profile/IroquoisPliskin1972)'s [Solid Snake and Pliskin fixes and overhaul﻿](https://www.nexusmods.com/metalgearsolid2mc/mods/45)
-8. [GuyOnAChair](https://www.nexusmods.com/profile/GuyOnAChair)'s [MGS2MC Solid Snake Hair Fix﻿](https://www.nexusmods.com/metalgearsolid2mc/mods/10)
-5. All other mods
-
 
 
 --------
