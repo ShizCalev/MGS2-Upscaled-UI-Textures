@@ -1,6 +1,11 @@
 # MGS2-Upscaled-UI-Textures
 [![Releases](https://img.shields.io/github/v/release/ShizCalev/MGS2-Upscaled-UI-Textures)](https://github.com/ShizCalev/MGS2-Upscaled-UI-Textures/releases) [![Downloads](https://img.shields.io/github/downloads/ShizCalev/MGS2-Upscaled-UI-Textures/total)](https://github.com/ShizCalev/MGS2-Upscaled-UI-Textures/releases) ![Commits](https://img.shields.io/github/commit-activity/t/ShizCalev/MGS2-Upscaled-UI-Textures) ![License](https://img.shields.io/github/license/ShizCalev/MGS2-Upscaled-UI-Textures)
 
+[Nexus Page](https://www.nexusmods.com/metalgearsolid2mc/mods/52) || **GitHub Repo (You're already here!)**
+
+<br>
+
+
 
 This texture pack for the 2023 PC Master Collection version of Metal Gear Solid 2 upscales all of the game's UI and menu textures. 
 
