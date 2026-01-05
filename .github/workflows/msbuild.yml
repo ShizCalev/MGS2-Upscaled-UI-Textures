@@ -36,15 +36,14 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v2
 
-
     # -------------------------
     # Prepare output structure
     # -------------------------
     - name: Create dist folder structure
       shell: pwsh
       run: |
-        $targets = @("dist_2x", "dist_4x")
-        $subdirs = @("plugins", "logs", "textures")
+        $targets = @("dist", "dist_2x", "dist_4x")
+        $subdirs = @("textures")
 
         foreach ($t in $targets) {
           New-Item -ItemType Directory -Path $t -Force | Out-Null
@@ -54,27 +53,17 @@ jobs:
         }
 
 
-    # -------------------------
-    # Build
-    # -------------------------
-    - name: Build
-      run: msbuild "ASI Mod\${{ github.event.repository.name }}.sln" /m -t:rebuild -verbosity:minimal -property:Configuration=Release -property:Platform=x64  -property:PlatformToolset=v143
-
     - name: Copy ASI files into all dist folders
       shell: pwsh
       run: |
-        $targets = @("dist_2x", "dist_4x")
+        $targets = @("dist", "dist_2x", "dist_4x")
 
         foreach ($t in $targets) {
           Write-Host "Copying to $t"
 
-          Copy-Item "ASI Mod\x64\Release\${{ github.event.repository.name }}.asi" "$t/plugins/${{ github.event.repository.name }}.asi" -Force
-          Copy-Item "ASI Mod\${{ github.event.repository.name }}.ini" "$t/plugins/${{ github.event.repository.name }}.ini" -Force
-
-          Copy-Item README.md "$t/logs/${{ github.event.repository.name }}.log" -Force
-          Copy-Item LICENSE "$t/plugins/${{ github.event.repository.name }}_LICENSE" -Force
+          Copy-Item README.md "$t/textures/${{ github.event.repository.name }}_README.md" -Force
+          Copy-Item LICENSE "$t/textures/${{ github.event.repository.name }}_LICENSE" -Force
         }
-
 
     # Build Dist Folders
     - name: Build Dist Folders
@@ -93,8 +82,9 @@ jobs:
     # Package everything
     - name: Create 2x Upscaled release zip
       working-directory: dist_2x
-      run: 7z a -tzip "../${{ github.event.repository.name }}_2x_AI_Upscaled_run-${{ github.run_number }}.zip" *
+      run: 7z a -tzip "../${{ github.event.repository.name }}_2x_AI_Upscaled_v${{ steps.extract_version.outputs.version }}.zip" *
 
     - name: Create 4x Upscaled release zip
       working-directory: dist_4x
-      run: 7z a -tzip "../${{ github.event.repository.name }}_2x_AI_Upscaled_run-${{ github.run_number }}.zip" *
+      run: 7z a -tzip "../${{ github.event.repository.name }}_4x_AI_Upscaled_v${{ steps.extract_version.outputs.version }}.zip" *
+

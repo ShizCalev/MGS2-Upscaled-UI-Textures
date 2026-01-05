@@ -5,6 +5,11 @@ env:
 
 on:
   workflow_dispatch:
+    inputs:
+      version:
+        description: "Version (e.g. 1.2.3)"
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -30,22 +35,6 @@ jobs:
         submodules: recursive
         fetch-depth: 0
 
-    - name: Extract version from version.h
-      id: extract_version
-      shell: bash
-      run: |
-        VERSION_FILE="ASI Mod/src/resources/version.h"
-        echo "Reading version from $VERSION_FILE"
-
-        VERSION_MAJOR=$(grep '#define VERSION_MAJOR' "$VERSION_FILE" | awk '{print $3}')
-        VERSION_MINOR=$(grep '#define VERSION_MINOR' "$VERSION_FILE" | awk '{print $3}')
-        VERSION_PATCH=$(grep '#define VERSION_PATCH' "$VERSION_FILE" | awk '{print $3}')
-
-        version="${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}"
-        echo "Parsed version: $version"
-
-        echo "version=$version" >> $GITHUB_OUTPUT
-
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v2
 
@@ -56,7 +45,7 @@ jobs:
       shell: pwsh
       run: |
         $targets = @("dist_2x", "dist_4x")
-        $subdirs = @("plugins", "logs", "textures")
+        $subdirs = @("textures")
 
         foreach ($t in $targets) {
           New-Item -ItemType Directory -Path $t -Force | Out-Null
@@ -64,13 +53,6 @@ jobs:
             New-Item -ItemType Directory -Path "$t/$s" -Force | Out-Null
           }
         }
-
-
-    # -------------------------
-    # Build
-    # -------------------------
-    - name: Build
-      run: msbuild "ASI Mod\${{ github.event.repository.name }}.sln" /m -t:rebuild -verbosity:minimal -property:Configuration=Release -property:Platform=x64  -property:PlatformToolset=v143
 
     - name: Copy ASI files into all dist folders
       shell: pwsh
@@ -80,13 +62,9 @@ jobs:
         foreach ($t in $targets) {
           Write-Host "Copying to $t"
 
-          Copy-Item "ASI Mod\x64\Release\${{ github.event.repository.name }}.asi" "$t/plugins/${{ github.event.repository.name }}.asi" -Force
-          Copy-Item "ASI Mod\${{ github.event.repository.name }}.ini" "$t/plugins/${{ github.event.repository.name }}.ini" -Force
-
-          Copy-Item README.md "$t/logs/${{ github.event.repository.name }}.log" -Force
-          Copy-Item LICENSE "$t/plugins/${{ github.event.repository.name }}_LICENSE" -Force
+          Copy-Item README.md "$t/textures/${{ github.event.repository.name }}_README.md" -Force
+          Copy-Item LICENSE "$t/textures/${{ github.event.repository.name }}_LICENSE" -Force
         }
-
 
     # Build Dist Folders
     - name: Build Dist Folders
@@ -102,25 +80,24 @@ jobs:
         Write-Host "Running Build_Dist_Folders.py..."
         py $scriptPath
 
-
-    # Package everything
+    # Package everything - Base
     - name: Create 2x Upscaled release zip
       working-directory: dist_2x
-      run: 7z a -tzip "../${{ github.event.repository.name }}_2x_AI_Upscaled_v${{ steps.extract_version.outputs.version }}.zip" *
+      run: 7z a -tzip "../${{ github.event.repository.name }}_2x_AI_Upscaled_v${{ inputs.version }}.zip" *
 
     - name: Create 4x Upscaled release zip
       working-directory: dist_4x
-      run: 7z a -tzip "../${{ github.event.repository.name }}_4x_AI_Upscaled_v${{ steps.extract_version.outputs.version }}.zip" *
+      run: 7z a -tzip "../${{ github.event.repository.name }}_4x_AI_Upscaled_v${{ inputs.version }}.zip" *
 
     - name: Generate Release Posting
       uses: ncipollo/release-action@v1
       with:
         artifacts: >
-          ${{ github.event.repository.name }}_2x_AI_Upscaled_v${{ steps.extract_version.outputs.version }}.zip,
-          ${{ github.event.repository.name }}_4x_AI_Upscaled_v${{ steps.extract_version.outputs.version }}.zip
+          ${{ github.event.repository.name }}_4x_AI_Upscaled_v${{ inputs.version }}.zip,
+          ${{ github.event.repository.name }}_2x_AI_Upscaled_v${{ inputs.version }}.zip
         token: ${{ secrets.GITHUB_TOKEN }}
-        tag: ${{ steps.extract_version.outputs.version }}
-        name: "${{ steps.extract_version.outputs.version }}"
+        tag: ${{ inputs.version }}
+        name: "${{ inputs.version }}"
         draft: true
         generateReleaseNotes: true
         artifactErrorsFailBuild: true
