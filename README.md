@@ -31,6 +31,7 @@ Please report any issues found with the pack, such as textures I might've missed
 
 1. Download any the latest release zips from: [here](https://github.com/ShizCalev/MGS2-Upscaled-UI-Textures/releases)
 1. Extract the contents of the zip into your game's folder.
+  - (e.g., steamapps\common\MGS2)
 
 
 <br>
