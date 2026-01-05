@@ -2,10 +2,12 @@
 [![Releases](https://img.shields.io/github/v/release/ShizCalev/MGS2-Upscaled-UI-Textures)](https://github.com/ShizCalev/MGS2-Upscaled-UI-Textures/releases) [![Downloads](https://img.shields.io/github/downloads/ShizCalev/MGS2-Upscaled-UI-Textures/total)](https://github.com/ShizCalev/MGS2-Upscaled-UI-Textures/releases) ![Commits](https://img.shields.io/github/commit-activity/t/ShizCalev/MGS2-Upscaled-UI-Textures) ![License](https://img.shields.io/github/license/ShizCalev/MGS2-Upscaled-UI-Textures)
 
 
-This texture pack for the 2023 PC Master Collection version of Metal Gear Solid 2 fully restores all the game's textures back to their pre-2011 HD Collection versions, reverting Bluepoint's "remastering", which in many cases was simply Bluepoint lazily running the game's textures through Sony PCL's [Real Scaling for HD](https://gigazine.net/gsc_news/en/20110808_sonypcl_real_scaling_for_hd/) anime upscaler and calling it a day. ([Source on Bluepoint's upscaler](https://i.imgur.com/5H4rZyc.png))
+This texture pack for the 2023 PC Master Collection version of Metal Gear Solid 2 upscales all of the game's UI and menu textures. 
 
-Optional AI Upscaled versions are also available, in some cases the results actually come out better than Bluepoint's upscaling, funnily enough.
 
+*This pack is complimentary to [MGS2 Community Bugfix Compilation](https://github.com/ShizCalev/MGS2-Community-Bugfix-Compilation), which upscales all the other textures for the game!
+
+*Fully compatible with the [MGS2 Demastered (Substance Edition)](https://github.com/ShizCalev/MGS2-Demastered-Substance-Edition/) texture pack.
 
 
 <br>
@@ -27,10 +29,6 @@ https://github.com/ShizCalev/MGS2-Community-Bugfix-Compilation/issues
 1. Extract the contents of the zip into your game's folder.
 
 
-
-*This pack is complimentary to / requires the [MGS2 Community Bugfix Compilation](https://github.com/ShizCalev/MGS2-Community-Bugfix-Compilation), as it re-imports all the remaining PS2 textures already!
-
-
 <br>
 
 ------------
@@ -41,9 +39,9 @@ https://github.com/ShizCalev/MGS2-Community-Bugfix-Compilation/issues
 2. [Knight_Killer](https://www.nexusmods.com/profile/KnightKiIIer)'s [MGS2 Better Audio Mod](https://www.nexusmods.com/metalgearsolid2mc/mods/3)
 3. MGS2 Community Bugfix Compilation - Base
 4. MGS2 Community Bugfix Compilation - AI Upscaled Texture Pack (if desired)
-5. MGS2 Demastered Texture Pack
-6. [IroquoisPliskin1972](https://www.nexusmods.com/profile/IroquoisPliskin1972)'s [Solid Snake and Pliskin fixes and overhaul﻿](https://www.nexusmods.com/metalgearsolid2mc/mods/45)
-7. [GuyOnAChair](https://www.nexusmods.com/profile/GuyOnAChair)'s [MGS2MC Solid Snake Hair Fix﻿](https://www.nexusmods.com/metalgearsolid2mc/mods/10)
+5. MGS2 Upscaled UI Textures
+7. [IroquoisPliskin1972](https://www.nexusmods.com/profile/IroquoisPliskin1972)'s [Solid Snake and Pliskin fixes and overhaul﻿](https://www.nexusmods.com/metalgearsolid2mc/mods/45)
+8. [GuyOnAChair](https://www.nexusmods.com/profile/GuyOnAChair)'s [MGS2MC Solid Snake Hair Fix﻿](https://www.nexusmods.com/metalgearsolid2mc/mods/10)
 5. All other mods
 
 
