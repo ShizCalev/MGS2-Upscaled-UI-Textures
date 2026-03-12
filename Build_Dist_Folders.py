@@ -38,7 +38,7 @@ VORTEX_MODS_DIR = Path(r"C:\Users\cmkoo\OneDrive\Vortex\metalgearsolid2mc\mods")
 
 LOCAL_SYNC_PREFIXES: dict[str, str] = {
     "dist_2x": "MGS2 2x Upscaled UI and Menu Textures",
-    #"dist_4x": "MGS2 4x Upscaled UI and Menu Textures",
+    "dist_4x": "MGS2 4x Upscaled UI and Menu Textures",
 }
 
 IGNORED_TARGET_PATH_PREFIXES = {
