@@ -1,5 +1,5 @@
 filename,before_hash,ctxr_hash,mipmaps,origin_folder,opacity_stripped,upscaled,upscaler_version,upscaler_type,ctxr3_converted,non_upscaled_version
-00fb5e0d_a4c6847d4b922f6cd44f7d23a8727f2c,620171dea044f965ed846d1ff5ee2a8cb3d5b38c,c8e8ad0cc781c765e76e74f1058580e5f34fb284,true,Self Remade\Finalized\Not Demaster Fixed\UI\Japanese,false,true,2,remarci_4x,false,0
+00fb5e0d_a4c6847d4b922f6cd44f7d23a8727f2c,620171dea044f965ed846d1ff5ee2a8cb3d5b38c,4534e88003ddba84442f4dc42c295082c51e371c,true,Self Remade\Finalized\Not Demaster Fixed\UI\Japanese,false,true,2,remarci_4x,false,0
 a_bg.bmp,78fefa4a6a4cfeb2b9de384af1aaade2bd15825c,566d129fd3380fa92e513a23d91942960dcc9231,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,2,remarci_4x,false,0
 b_bg.bmp,24237a173703df54b3ccf6692f97d186d353bd87,9cc50de371b10be329ea717f002442121b4106a2,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,2,remarci_4x,false,0
 bg_alp_ovl.bmp,0558188f1609dd3ca6ae74a6dc8bdd2e0b99f017,3927e0a77215f382ee475a9e8636c24c301403f5,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,2,remarci_4x,false,0
@@ -7,7 +7,7 @@ c_bg.bmp,d95c1b4d08a0d4434ff9837ada1f5b544db119a4,f41f02fa4c403b8fc184d1061ea6f6
 d_bg.bmp,994461455c9b280ca3b3476bb1dac4dbf5b345c9,3e6c9603f65dd101e9a3ea1b6cf470c20b4486f8,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,2,remarci_4x,false,0
 e_bg.bmp,c07bcdbae6209b9898ef1c6a833a13856ac052dd,5ed9b59c3843f4943530744e595d35689a7fdf32,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,2,remarci_4x,false,0
 r_bg.bmp,05c4c324ae905f52f70f762039c3eae6af3ec6a2,b2cb16b54229c6547912898cc0061b8daeb7b97e,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,2,remarci_4x,false,0
-sce_cesa_attention.bmp,5c43f92f9a1801eacfe8d0fcd546546a73db6abe,51909c16d8aa178ab51a7ddd4583262269b6e82b,true,Self Remade\Finalized\Self Remastered\UI\Japanese\Dont Demaster\Stock Files,true,true,2,remarci_4x,false,0
+sce_cesa_attention.bmp,5c43f92f9a1801eacfe8d0fcd546546a73db6abe,7050f0097cdeef8e64e2f50ba5c9ba8f35192cf5,true,Self Remade\Finalized\Self Remastered\UI\Japanese\Dont Demaster\Stock Files,true,true,2,remarci_4x,false,0
 sr01j_alp_ovl.bmp_71b551295ba518fae4283bd712544a6d,0ecbaade2113373ec71c0f5d9c2892754b3de6c7,d48731f0d69672c29557eca049f3cda3d30cc416,true,Self Remade\Finalized\Self Remastered\UI\Japanese\Dont Demaster\Stock Files,false,true,2,remarci_4x,false,0
 sr02j_alp_ovl.bmp_4a09a9b88e5c9d0cf6da451edf0dbec7,1345da4593952b7dc37ee75177ce492ce78f5a8c,dc44749e4673ffdcbb8856e8a3d24083e12dce7c,true,Self Remade\Finalized\Self Remastered\UI\Japanese\Dont Demaster\Stock Files,false,true,2,remarci_4x,false,0
 sr04e_alp_ovl.bmp_7df013dc1a4acc27c98bdd79b9268942,5b595bfbdf29202fb3f86544e66139377e9324a3,092f91422e463b25d37587550ef92f336d03ed1f,true,Self Remade\Finalized\Self Remastered\UI\Japanese\Dont Demaster\Stock Files,false,true,2,remarci_4x,false,0

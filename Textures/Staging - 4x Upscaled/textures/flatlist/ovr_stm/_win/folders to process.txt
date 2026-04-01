@@ -1,3 +1,5 @@
 C:\Development\Git\Afevis-MGS2-Bugfix-Compilation\Texture Fixes\mc textures\HAS ALPHA\bp_remade\no_mip_fixes\ui
 C:\Development\Git\Afevis-MGS2-Bugfix-Compilation\Texture Fixes\mc textures\OPAQUE\bp_remade\no_mip_fixes\ui
-C:\Development\Git\Afevis-MGS2-Bugfix-Compilation\Texture Fixes\mc textures\tri with alpha\bp_remade\no_mip_fixes\ui
+
+C:\Development\Git\Afevis-MGS2-Bugfix-Compilation\Texture Fixes\ps2 textures\OPAQUE\no_mip_fixes\ui
+C:\Development\Git\Afevis-MGS2-Bugfix-Compilation\Texture Fixes\ps2 textures\HAS ALPHA\no_mip_fixes\ui
