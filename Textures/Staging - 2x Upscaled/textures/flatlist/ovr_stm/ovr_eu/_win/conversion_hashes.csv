@@ -1,9 +1,9 @@
-filename,before_hash,ctxr_hash,mipmaps,origin_folder,opacity_stripped,upscaled,upscaler_version,upscaler_type,ctxr3_converted,non_upscaled_version
-a_bg.bmp,78fefa4a6a4cfeb2b9de384af1aaade2bd15825c,566d129fd3380fa92e513a23d91942960dcc9231,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,3,remarci_4x,false,0
-b_bg.bmp,24237a173703df54b3ccf6692f97d186d353bd87,9cc50de371b10be329ea717f002442121b4106a2,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,3,remarci_4x,false,0
-bg_alp_ovl.bmp,0558188f1609dd3ca6ae74a6dc8bdd2e0b99f017,3927e0a77215f382ee475a9e8636c24c301403f5,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,3,remarci_4x,false,0
-c_bg.bmp,d95c1b4d08a0d4434ff9837ada1f5b544db119a4,f41f02fa4c403b8fc184d1061ea6f61db9cd2fa2,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,3,remarci_4x,false,0
-d_bg.bmp,994461455c9b280ca3b3476bb1dac4dbf5b345c9,3e6c9603f65dd101e9a3ea1b6cf470c20b4486f8,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,3,remarci_4x,false,0
-e_bg.bmp,c07bcdbae6209b9898ef1c6a833a13856ac052dd,5ed9b59c3843f4943530744e595d35689a7fdf32,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,3,remarci_4x,false,0
-r_bg.bmp,05c4c324ae905f52f70f762039c3eae6af3ec6a2,b2cb16b54229c6547912898cc0061b8daeb7b97e,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,3,remarci_4x,false,0
-sr19e_alp_ovl.bmp,c44465f00b2da61f2aa6a8574c073e1b817c5f9a,484610bfcff564ce0b7fa2d985d9b583d6e79f0c,true,Self Remade\Finalized\Not Demaster Fixed\UI\English,false,true,3,remarci_4x,false,0
+filename,before_hash,ctxr_hash,mipmaps,origin_folder,opacity_stripped,upscaled,upscaler_version,upscaler_type,ctxr3_converted,non_upscaled_version,npot_resized
+a_bg.bmp,78fefa4a6a4cfeb2b9de384af1aaade2bd15825c,3d6100db6552752a826fbaf7d4267f6db435a8e8,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,4,remarci_4x,false,0,false
+b_bg.bmp,24237a173703df54b3ccf6692f97d186d353bd87,0872d2c50e4977344b7aaf6d86156f92c99c8283,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,4,remarci_4x,false,0,false
+bg_alp_ovl.bmp,0558188f1609dd3ca6ae74a6dc8bdd2e0b99f017,f5f9ada73b95f982d3539894ae802b641ab39037,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,4,remarci_4x,false,0,false
+c_bg.bmp,d95c1b4d08a0d4434ff9837ada1f5b544db119a4,42123f661dd7bf1804639d2335cdafc5e2ac0d0b,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,4,remarci_4x,false,0,false
+d_bg.bmp,994461455c9b280ca3b3476bb1dac4dbf5b345c9,f715ab39de8020f4dd8b62b6ec45f83e8c444c7e,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,4,remarci_4x,false,0,false
+e_bg.bmp,c07bcdbae6209b9898ef1c6a833a13856ac052dd,0f656ca5eab992bc725886b4d2517042bf0a6322,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,4,remarci_4x,false,0,false
+r_bg.bmp,05c4c324ae905f52f70f762039c3eae6af3ec6a2,d226869d192b404651b885078158ecfeeb3ce64a,true,Self Remade\Finalized\Dont demaster\16-9 Fixes,true,true,4,remarci_4x,false,0,false
+sr19e_alp_ovl.bmp,c44465f00b2da61f2aa6a8574c073e1b817c5f9a,484610bfcff564ce0b7fa2d985d9b583d6e79f0c,true,Self Remade\Finalized\Not Demaster Fixed\UI\English,false,true,4,remarci_4x,false,0,false
