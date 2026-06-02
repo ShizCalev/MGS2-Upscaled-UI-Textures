@@ -2,7 +2,9 @@ name: Sync to GitLab
 
 on:
   push:
-    branches: [master]
+    branches:
+      - main
+      - master
 
 jobs:
   sync:
