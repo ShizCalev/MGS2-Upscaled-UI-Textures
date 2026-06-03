@@ -141,6 +141,7 @@ jobs:
         version: "${{ inputs.version }}"
         file_category: main
         archive_existing_file: true
+        primary_mod_manager_download: true
 
 
     - name: Upload to NexusMods - MGS2 2x Upscaled UI and Menu Textures
