@@ -132,25 +132,26 @@ jobs:
 
 
     - name: Upload to NexusMods - MGS2 4x Upscaled UI and Menu Textures
-      uses: Nexus-Mods/upload-action@v1.0.0-beta.7
+      uses: Nexus-Mods/upload-action@v1.0.0-beta.9
       with:
         api_key: ${{ secrets.NEXUSMODS_API_KEY }}
-        file_group_id: 699550
+        file_id: 699550
         display_name: "MGS2 4x Upscaled UI and Menu Textures"
         filename: ${{ github.event.repository.name }}_4x_AI_Upscaled_v${{ inputs.version }}.zip
         version: "${{ inputs.version }}"
-        file_category: main
-        archive_existing_file: true
+        category: main
+        archive_existing_version: true
         primary_mod_manager_download: true
 
 
     - name: Upload to NexusMods - MGS2 2x Upscaled UI and Menu Textures
-      uses: Nexus-Mods/upload-action@v1.0.0-beta.7
+      uses: Nexus-Mods/upload-action@v1.0.0-beta.9
       with:
         api_key: ${{ secrets.NEXUSMODS_API_KEY }}
-        file_group_id: 699547
+        file_id: 699547
         display_name: "MGS2 2x Upscaled UI and Menu Textures"
         filename: ${{ github.event.repository.name }}_2x_AI_Upscaled_v${{ inputs.version }}.zip
         version: "${{ inputs.version }}"
-        file_category: main
-        archive_existing_file: true
+        category: main
+        archive_existing_version: true
+        update_mod_version: true
